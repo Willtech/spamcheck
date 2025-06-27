@@ -2,7 +2,7 @@ export default {
   async fetch(request, env, ctx) {
     const ip = request.headers.get("CF-Connecting-IP") || "unknown";
     
-    const res = await fetch("https://yourdomain.com/threatmanager/spamcheck.php", {
+    const res = await fetch("https://messenger.willtech.com.au/threatmanager/spamcheck.php", {
       headers: {
         "X-Forwarded-For": ip,
         "User-Agent": request.headers.get("User-Agent")
